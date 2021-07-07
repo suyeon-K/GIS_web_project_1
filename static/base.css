@@ -1,0 +1,17 @@
+.test_header_logo {
+    margin: 2rem 0;
+    font-family: 'DM Serif Display', serif;
+}
+
+
+.test_header_botton {
+    margin-bottom: 2rem;
+}
+
+.test_footer_logo{
+    margin: 1.5rem 0;font-family: 'DM Serif Display', serif;
+}
+
+.test_footer_button {
+    margin-top: 1.5rem;
+}
