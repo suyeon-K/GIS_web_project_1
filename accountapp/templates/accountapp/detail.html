@@ -7,7 +7,12 @@
             <h4>{{ target_user.username }}</h4>
         </div>
         <div>
-            {{ target_user.data_joined }}
+            {{ target_user.date_joined }}
+        </div>
+        <div>
+            <a href="{% url 'accountapp:update' pk=target_user.pk %}">
+                Update info
+            </a>
         </div>
     </div>
 
