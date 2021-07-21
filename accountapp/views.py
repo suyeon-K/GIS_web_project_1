@@ -33,14 +33,13 @@ def hello_world(request):
         return HttpResponseRedirect(reverse('accountapp:login'))
 
 
-
-
 class AccountCreateView(CreateView):
     # 회원가입 로직 구현!
     model = User
     form_class = UserCreationForm
     success_url = reverse_lazy('accountapp:hello_world') # 나중에 내용을 과
     template_name = 'accountapp/create.html'
+
 
 class AccountDetailView(DetailView):
     model = User
@@ -66,7 +65,6 @@ class AccountUpdateView(UpdateView):
             return super().post(request, *args, **kwargs)
         else:
             return HttpResponseForbidden()
-
 
 
 class AccountDeleteView(DeleteView):
