@@ -9,7 +9,8 @@
 }
 
 .test_footer_logo{
-    margin: 1.5rem 0;font-family: 'DM Serif Display', serif;
+    margin: 1.5rem 0;
+    font-family: 'DM Serif Display', serif;
 }
 
 .test_footer_button {
@@ -42,4 +43,15 @@
 
 .round_button:hover {
     color : dimgrey;
+}
+
+.article_content {
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.article_image {
+    border-radius: 2rem;
+    width: 60%;
+    box-shadow: 0 0 1rem darkgray;
 }
