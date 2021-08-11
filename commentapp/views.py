@@ -28,8 +28,8 @@ class CommentCreateView(CreateView):
         return reverse('articleapp:detail', kwargs={'pk': self.object.article.pk})
 
 
-@method_decorator(comment_ownership_required,'get')
-@method_decorator(comment_ownership_required,'post')
+@method_decorator(comment_ownership_required, 'get')
+@method_decorator(comment_ownership_required, 'post')
 class CommentDeleteView(DeleteView):
     model = Comment
     context_object_name = 'target_comment'
