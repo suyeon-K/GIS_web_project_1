@@ -20,7 +20,7 @@
             <div class="my-5 article_content">
                 {{ target_article.content }}
             </div>
-            {% if target_article.writer == use %}
+            {% if target_article.writer == user %}
             <div>
                 <a href="{% url 'articleapp:update' pk=target_article.pk %}"
                    class="btn btn-success rounded-pill px5">
