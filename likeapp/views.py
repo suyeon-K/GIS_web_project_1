@@ -42,5 +42,7 @@ class LikeArticleView(RedirectView):
             messages.add_message(request, messages.ERROR, '좋아요는 한번만 가능합니다')
             return HttpResponseRedirect(reverse('articleapp:detail', kwargs={'pk': kwargs['article_pk']}))
 
+        return super().get(request, *args, **kwargs)
+
     def get_redirect_url(self, *args, **kwargs):
         return reverse('articleapp:detail', kwargs={'pk' : kwargs['article_pk']})
